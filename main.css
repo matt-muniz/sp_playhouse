@@ -1,0 +1,420 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	box-sizing: border-box;
+	background: #e4cdf2;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.btn{
+	background: #f4f4f4;
+	padding: 0.5em 1.5em;
+	font-weight: bold;
+}
+.container{
+	text-align: center;
+}
+.navbar-slider{
+	z-index: -1;
+	float: left;
+	width: 17em;
+}
+/*
+*
+*	Side Nav
+*
+*/
+#sid-navbar-silder{
+	height: 100vh;
+}
+#side-navbar{
+	background: #cea2e7;
+	height: 100vh;
+	width: 17em;
+	float: left;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 3px 5px 13px gray;
+}
+#side-navbar-logo{
+	padding-top: 5rem;	
+}
+#side-navbar-social{
+	margin-top: 5rem;
+}
+#side-navbar-social img{
+	width: 2.8rem;
+}
+#daily-adm{
+	margin: 5rem 0;
+}
+#daily-adm p{
+	font-size: 1.3rem;
+	margin-bottom: 0.3rem;
+}
+#daily-adm li{
+	margin-bottom: 0.3rem;
+	font-size: 1.2rem;
+	color: #fff;
+}
+#daily-btn{
+	font-size: 0.8rem;
+	border-radius: 10%;
+	margin: 0.3rem;
+}
+#hours p{
+	font-size: 1.2rem;
+}
+#hours .wk-day{
+	font-size: 1.1rem;
+}
+#hours li{
+	font-size: 0.9rem;
+	color: #fff;
+}
+@media screen and (max-width: 56rem),(max-height: 87rem) and (orientation: portrait){
+	#side-navbar{
+		display: none;
+	}
+	.navbar-slider{
+		display: none;
+	}
+}
+/*Ipad landscape */
+@media screen and (min-width: 63rem) and (max-width: 81rem){
+	#side-navbar-logo{
+		padding-top: 3rem;
+	}
+	#side-navbar-logo img{
+		width: 12rem;
+	}
+	#side-navbar-social{
+		margin-top: 3rem;
+	}
+	#side-navbar-social img{
+		width: 2.5rem;
+	}
+	#daily-adm{
+		margin: 3rem 0;
+	}
+}
+
+@media screen and (max-height: 56rem){
+	#side-navbar{
+	}
+}
+/*
+*
+*	nav bar
+*
+*/
+#nav-bar{
+	padding-top: 3em;
+	overflow: hidden;
+	border-bottom: 1px solid #983acc;
+}
+#nav-bar img{
+	display: none;
+}
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+	color: #00BFFF;
+}
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 47rem), (max-height: 31rem){	
+	#nav-bar{
+		padding: 1rem 0.5rem 1rem 1rem;
+		height: auto;
+	}
+  #nav-bar img{
+	  float: left;
+	  display: block;
+	  width: 5rem;
+  }
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 65rem) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+	text-align: right;
+	color: #983acc;
+  }
+  .topnav.responsive a:first-child{
+  	padding-top: 3rem;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/*Ipad Ipad pro portrait*/
+@media screen and (min-height: 63rem) and (max-height: 88rem) and (orientation: portrait){
+	#nav-bar{
+		padding-bottom: 2rem;
+		padding-left: 0.5rem;
+	}
+	.topnav a{
+		font-size: 2.5vw;
+		margin: 0 1rem;
+	}
+	#nav-bar img{
+		width: 8rem;
+	}
+	.topnav .icon img{
+	}
+	  #nav-bar img{
+	  float: left;
+	  display: block;
+	  width: 5rem;
+  }
+}
+/*Ipad pro and up landscape */
+@media screen and (min-width: 81rem){
+	.topnav a{
+		font-size: 1.5rem;
+		margin: 0 3%;
+	}
+}
+/*
+*
+*	main
+*
+*/
+#main-body{
+	height: 90vh;
+	overflow: hidden;
+}
+#main-body h1{
+	margin-bottom: 1rem;
+	font-size: 5.5vw;
+	color: white;
+}
+#main-body p{
+	font-size: 4.2vw;
+	color: white;
+}
+#main-body h2{
+	font-size: 5vw;
+	margin: 5rem 0 1rem 0;
+	color: white;
+}
+#main-body p:last-child{
+	font-size: 3.3vw;
+}
+.badge {
+	transform: rotate(0deg);
+	height: 200px;
+	display: flex;
+	padding-top: 5rem;
+}
+.badge h1 span {
+	font: 2rem Monaco, MonoSpace;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	width: 40px;
+	margin-left: -20px;
+	transform-origin: bottom center;
+	color: #983acc;
+}
+/*C*/
+.char1 {
+  transform: rotate(-72deg);
+}
+/*L*/
+.char2 {
+  transform: rotate(-60deg);
+}
+/*E*/
+.char3 {
+  transform: rotate(-48deg);
+}
+/*A*/
+.char4 {
+  transform: rotate(-36deg);
+}
+/*N*/
+.char5 {
+  transform: rotate(-24deg);
+}
+/*Space*/
+.char6 {
+   transform: rotate(0deg);
+}
+/*S*/
+.char7 {
+  transform: rotate(-6deg);
+}
+/*A*/
+.char8 {
+  transform: rotate(6deg);
+}
+/*F*/
+.char9 {
+  transform: rotate(18deg);
+}
+/*E*/
+.char10 {
+  transform: rotate(30deg);
+}
+/*SPACE*/
+.char11 {
+  transform: rotate(0deg);
+}
+/*F*/
+.char12 {
+  transform: rotate(48deg);
+}
+/*U*/
+.char13 {
+  transform: rotate(60deg);
+}
+/*N*/
+.char14 {
+  transform: rotate(72deg);
+}
+/*Ipad landscape */
+@media screen and (min-width: 63rem) and (max-width: 81rem){
+	#main-body h1{
+		font-size: 3rem;
+	}
+	#main-body p{
+		font-size: 1.7rem;
+	}
+	#main-body h2{
+		font-size: 2rem;
+	}
+	#main-body p:last-child{
+	font-size: 1.5rem;
+	}
+}
+/*Ipad portrait*/
+@media screen and (min-height: 63rem) and (max-height: 81rem) and (orientation: portrait){
+	.badge{
+		padding-top: 10rem;
+	}
+}
+/*Ipad pro portrait*/
+@media screen and (min-height: 81rem) and (orientation: portrait){
+	.badge{
+		padding-top: 20rem;
+	}
+}
+/*Ipad pro and up landscape */
+@media screen and (min-width: 81rem){
+	#main-body h1{
+		font-size: 3.7rem;
+	}
+		#main-body p{
+		font-size: 2.5rem;
+	}
+	#main-body h2{
+		font-size: 3.3rem;
+	}
+	.badge{
+		padding-top: 10rem;
+	}
+	#main-body p:last-child{
+		font-size: 2.2rem;;
+	}
+}
+/*
+*
+*	Packages
+*
+*/
+#packages-silder{
+	height: auto;
+}
+#packages{
+	padding: 3rem 3rem;
+	overflow: hidden;
+	background: #fff;
+}
+#packages h1{
+	font-size: 5.5vw;
+	color: #00BFFF;
+}
+#packages ul li{
+	margin: 0.5rem 0;
+	color: #983acc;
+	font-size: 3.5vw;
+}
+#packages-btn{
+	margin-top: 0.5rem;
+	font-size: 3vw;
+}
+
+#calender{
+	overflow: hidden;
+	padding: 3rem 0;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+}
+#calender-container{
+	width: 90%;
+}
+#calender-silder{
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
